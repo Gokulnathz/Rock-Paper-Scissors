@@ -1,0 +1,118 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.icons{
+  width: 200px;
+}
+
+
+.scale-button {
+  transition: transform 0.2s ease; /* Add a smooth transition */
+}
+
+.scale-button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+}
+
+.zoom-in-out{
+  animation: zoom 1s ease infinite;
+}
+@keyframes zoom{
+/* At the beginning of the animation */
+0% {
+  /* Scale the element to its original size */
+  transform: scale(1, 1);
+}
+/* At the middle of the animation */
+50% {
+  /* Scale the element to 1.5 times its original size */
+  transform: scale(1.1, 1.1);
+}
+/* At the end of the animation */
+100% {
+  /* Scale the element back to its original size */
+  transform: scale(1, 1);
+}
+}
+
+
+@media (max-width: 992px){
+
+  .icons {
+    width: 150px;
+    height: 140px;
+  }
+  .playB{
+    width:100px;
+    height:80px;
+    margin-left: -100px;
+    
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .icons {
+    width: 90px;
+    height: 90px;
+  }
+  
+  /* Modify table layout for small screens */
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    
+    font-size: 14px;
+  }
+  th{
+    padding:10px ;
+  }
+  /* .playB{
+    width:80px;
+    height:50px;
+    margin-left: 80px;
+    margin-top: 20px;
+  } */
+}
+
+/* For very small devices (e.g., mobile phones with max-width of 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Stack table content for better readability */
+  table {
+    display: block;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  button {
+    width: 100%; /* Make buttons full width */
+  }
+  
+}
